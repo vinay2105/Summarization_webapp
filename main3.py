@@ -6,9 +6,7 @@ from langchain.chains import LLMChain
 from dotenv import load_dotenv
 import os
 import streamlit as st
-
-
-load_dotenv("D:\summarization\key.env")  
+ 
 HUGGINGFACEHUB_API_TOKEN = st.secrets["huggingface"]["api_token"]
 
 
