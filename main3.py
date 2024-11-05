@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 import os
 import streamlit as st
  
-HUGGINGFACEHUB_API_TOKEN = st.secrets["huggingface"]["api_token"]
+HUGGINGFACEHUB_API_TOKEN = st.secrets["api_token"]
 
 
 def summarization(text):
