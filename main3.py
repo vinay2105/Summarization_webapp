@@ -7,6 +7,9 @@ from dotenv import load_dotenv
 import os
 import streamlit as st
 
+huggingface_api_token = os.environ.get("HUGGINGFACEHUB_API_TOKEN")
+
+
 
 def summarization(text):
     llm = HuggingFaceHub(repo_id="utrobinmv/t5_summary_en_ru_zh_base_2048", model_kwargs={"temperature":0,"max_length":64} )
